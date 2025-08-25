@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨  Etch-a-Sketch</h1>
+        <div class="controls">
+            <input type="number" class="size-input" id="gridSize" value="16">
+            <button class="size-btn" onclick="resizeGrid()" id="sizeBtn">ReSize</button>
+            <button class="black-btn" onclick="setMode('black')" id="blackBtn">Black</button>
+            <button class="color-btn" onclick="setMode('color')" id="colorBtn">color</button>
+            <button class="shadow-btn" onclick="setMode('shadow')" id="shadowBtn">Shadow</button>
+            <button class="eraser" onclick="setMode('eraser')" id="eraserBtn">Eraser</button>
+            <button class="clear-btn" onclick="clearGrid()" id="clearBtn">Clear</button>
+        </div>
+        <div class="mode-indicator" id="modeIndicator">Mode: Black</div>
+        <div class="grid-container">
+            <div class="grid" id="grid"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

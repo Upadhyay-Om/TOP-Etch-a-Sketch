@@ -1,0 +1,45 @@
+button {
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: none;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+button:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+button:hover:not(:active) {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+#blackBtn {
+    background: linear-gradient(to bottom, #444, #1a1a1a 50%, #000);
+    color:white
+}
+#colorBtn{
+    background: linear-gradient(45deg, #ff9a9e, #ffd89b);
+    color:white;
+}
+
+#shadowBtn {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+#clearBtn{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    color: black;
+}
+#sizeBtn{
+    background: linear-gradient(45deg, #007bff, #20c997);
+    color: white;
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 20%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 1000px;
+    width: 900px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    gap: 15px;
+    margin: 10px 10px;
+    padding: 10px;
+    background: #f8f9fa;
+}
+#gridSize {
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+#modeIndicator {
+    background: #333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-top: 10px;
+    font-size: large;
+    text-align: center;
+}
+.grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 700px;
+    height: 700px;
+}
+.grid-cell {
+    border: 1px solid #eee;
+    background: white;
+    transition: background-color 0.1s ease;
+    
+}
